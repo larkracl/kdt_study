@@ -1,0 +1,13 @@
+---
+- name: File module
+  hosts: local
+
+  tasks:
+    - name: copy and mode 755
+      file:
+        src: "/home/user/tmp/a"
+        dest: "/home/user/tmp/cpy-a"
+        mode: "0755"
+        owner: "deploy"
+        group: "deploy"
+      become: yes

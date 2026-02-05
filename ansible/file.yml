@@ -1,0 +1,10 @@
+---
+- name: File module
+  hosts: local
+
+  tasks:
+    - name: mode 755
+      file:
+        path: "/home/user/tmp"
+        mode: 0755
+        recurse: yes

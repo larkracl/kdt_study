@@ -1,0 +1,9 @@
+---
+- name: copy and mode 755
+  file:
+    src: "/home/user/a"
+    dest: '/home/user/tmp/cpy-a"
+    mode: "0755"
+    owner: "deploy"
+    group: "deploy"
+  become: yes
